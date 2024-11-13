@@ -1,0 +1,68 @@
+services:
+  nginx:
+    image: nginx:latest
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf
+      - .:/var/www/we
+    depends_on:
+      - mariadb
+      - we
+    networks:
+      - sail
+    deploy:
+      resources:
+        limits:
+          cpus: '0.5'
+          memory: '512M'
+    logging:
+      driver: json-file
+      options:
+        max-size: "10m"
+        max-file: "3"
+  we:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment:
+      - CPU_LIMIT=50
+    volumes:
+      - .:/var/www/we
+    depends_on:
+      - mariadb
+    networks:
+      - sail
+  mariadb:
+    image: 'mariadb:latest'
+    hostname: 'mariadb_master'
+    ports:
+      - '${FORWARD_DB_PORT:-3308}:3306'
+    environment:
+      MYSQL_ROOT_PASSWORD: '${DB_PASSWORD}'
+      MYSQL_DATABASE: '${DB_DATABASE}'
+      MYSQL_USER: '${DB_USERNAME}'
+      MYSQL_PASSWORD: '${DB_PASSWORD}'
+      MYSQL_ALLOW_EMPTY_PASSWORD: 'yes'
+    volumes:
+      - 'sail-mariadb:/var/lib/mysql'
+      - ./mariadb/init:/docker-entrypoint-initdb.d
+      - ./config-files/primarycnf:/etc/mysql/conf.d:z
+      - ./primaryinit:/docker-entrypoint-initdb.d:z
+    networks:
+      - sail
+    restart: always
+    healthcheck:
+      test: [ "CMD", "mysqladmin", "ping", "-p${DB_PASSWORD}" ]
+      retries: 3
+      timeout: 5s
+networks:
+  sail:
+    driver: bridge
+volumes:
+  sail-mariadb:
+    driver: local
+  jenkins-docker-certs:
+  jenkins-data:
+

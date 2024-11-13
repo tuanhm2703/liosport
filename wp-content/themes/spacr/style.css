@@ -1,0 +1,324 @@
+/*
+Theme Name: Spacr
+Theme URI: https://envothemes.com/spacr-free-wp-theme/
+Description: Spacr is a fast, clean, lightweight, customizable and modern-looking free responsive WooCommerce WordPress theme for e-commerce stores like clothing, fashion, electronics, ebooks, dress store, sports shop, marketplace, multivendor, equipments or online products. Theme works perfectly with the new block editor (Gutenberg) and popular page builders like Elementor, Beaver Builder, SiteOrigin, Thrive Architect, Divi, Brizy, Visual Composer etc. Theme is compatible with YITH WooCommerce Wishlist, YITH WooCommerce Compare, WooCommerce Variation Swatches and other popular plugins. The theme is SEO friendly, WPML and RTL ready. Theme demo ready to import: https://envothemes.com/spacr/
+Author: EnvoThemes
+Author URI: https://envothemes.com/
+Version: 1.0.5
+Tested up to: 6.7
+Requires PHP: 5.6
+License: GNU General Public License v3.0 or later
+License URI: https://www.gnu.org/licenses/gpl.html
+Tags: one-column, two-columns, full-width-template, right-sidebar, custom-background, custom-menu, custom-header, editor-style, featured-images, translation-ready, custom-logo, threaded-comments, footer-widgets, rtl-language-support, blog, e-commerce
+Text Domain: spacr
+Template: entr
+*/
+
+a, a:active, a:hover, a:focus {
+    color: #ff3131;
+}
+.dropdown-menu > .active > a,
+.dropdown-menu > .active > a:hover,
+.dropdown-menu > .active > a:focus {
+    background-color: #ff3131;
+}
+.woocommerce #respond input#submit:hover, .woocommerce a.button:hover, .woocommerce button.button:hover, .woocommerce input.button:hover, .woocommerce #respond input#submit.alt:hover, .woocommerce a.button.alt:hover, .woocommerce button.button.alt:hover, .woocommerce input.button.alt:hover {
+    color: #ff3131;
+}
+.woocommerce #respond input#submit.alt.disabled, .woocommerce #respond input#submit.alt.disabled:hover, .woocommerce #respond input#submit.alt:disabled, .woocommerce #respond input#submit.alt:disabled:hover, .woocommerce #respond input#submit.alt:disabled[disabled], .woocommerce #respond input#submit.alt:disabled[disabled]:hover, .woocommerce a.button.alt.disabled, .woocommerce a.button.alt.disabled:hover, .woocommerce a.button.alt:disabled, .woocommerce a.button.alt:disabled:hover, .woocommerce a.button.alt:disabled[disabled], .woocommerce a.button.alt:disabled[disabled]:hover, .woocommerce button.button.alt.disabled, .woocommerce button.button.alt.disabled:hover, .woocommerce button.button.alt:disabled, .woocommerce button.button.alt:disabled:hover, .woocommerce button.button.alt:disabled[disabled], .woocommerce button.button.alt:disabled[disabled]:hover, .woocommerce input.button.alt.disabled, .woocommerce input.button.alt.disabled:hover, .woocommerce input.button.alt:disabled, .woocommerce input.button.alt:disabled:hover, .woocommerce input.button.alt:disabled[disabled], .woocommerce input.button.alt:disabled[disabled]:hover {
+    background-color: #ff3131;
+}
+.amount-cart {
+    background: #ff3131;
+}
+.amount-cart:before {
+    border-right: 7px solid #ff3131;
+}
+.cart-contents span.count, .woocommerce span.onsale, .woocommerce .widget_price_filter .ui-slider .ui-slider-range, .woocommerce .widget_price_filter .ui-slider .ui-slider-handle {
+    background-color: #ff3131;
+}
+.woocommerce div.product .woocommerce-tabs ul.tabs li.active {
+    border-bottom: 3px solid #ff3131;
+}
+.site-header {
+    padding: 15px 0;
+}
+.page-area {
+    padding-top: 35px;
+    padding-right: 30px;
+}
+.content-article {
+    clear: none;
+    padding: 20px 0 25px 0;
+    width: 48%;
+    margin-bottom: 30px;
+    box-shadow: 0px 10px 25px 0px rgba(25,45,110,.10);
+    overflow: hidden;
+}
+.single-post-content {
+    clear: none;
+    padding: 0 0 25px 0;
+    margin-bottom: 30px;
+    box-shadow: 0px 10px 25px 0px rgba(25,45,110,.10);
+    overflow: hidden;
+}
+.content-article:nth-of-type(2n-1) {
+    margin-right: 4%;
+}
+#content-footer-section {
+    background-color: #e6e6e6;
+}
+#content-footer-section .widget-title h3 {
+    color: #1a1a1a;
+}
+.woocommerce article.woo-content, .single-page article {
+    padding: 10px 15px 25px 15px;
+    margin-bottom: 30px;
+    box-shadow: 0px 10px 25px 0px rgba(25,45,110,.10);
+    overflow: hidden;
+}
+.woocommerce article.woo-content {
+    padding: 25px;
+    margin-bottom: 25px;
+}
+.single-head, .article-meta, .post-excerpt, .single-entry-summary, .entry-footer, nav.navigation.post-navigation, .single-footer, a.post-edit-link {
+    padding: 0 25px;
+}
+.news-item h2 a {
+    font-size: 30px;
+    line-height: 33px;
+    font-weight: 400;
+}
+.news-item h2 {
+    margin-top: 0;
+    margin-bottom: -15px;
+}
+article .has-post-thumbnail .news-item h2 {
+    margin-top: 0;
+}
+.article-meta {
+    margin-bottom: 10px;
+} 
+#sidebar {
+    box-shadow: 0px 10px 25px 0px rgba(28,45,113,.10);
+    padding: 25px;
+    margin-left: 15px;
+    margin-right: -15px;
+    margin-bottom: 15px;
+}
+.widget-title h3, h2.wp-block-heading {
+    margin-bottom: 10px;
+    font-weight: 400;
+    font-size: 18px;
+}
+.woocommerce span.onsale {
+    top: 0;
+    left: 0;
+}
+.title-header .heading-row {
+    justify-content: center;
+}
+.site-menu {
+    padding: 10px 0;
+    background-color: #fff;
+    border-bottom: 1px solid #f6f6f6;
+    z-index: 97;
+    position: relative;
+    box-shadow: 0px 5px 10px 0px rgba(25,45,120,.10);
+}
+#my-menu-right {
+    padding-right: 25px;
+}
+#my-menu-right .navbar-nav>li>a {
+    font-weight: 400;
+    font-size: 15px;
+}
+.menu-search-widget {
+    width: 100%;
+}
+.menu-search-widget .widget_product_search {
+    margin: 0;
+}
+.menu-search-widget input {
+    padding-top: 3px;
+    padding-bottom: 3px;
+    height: 36px;
+    line-height: 22px;
+    font-size: 15px;
+    padding-right: 80px;
+}
+.menu-search-widget button[type="submit"] {
+    position: absolute;
+    right: 2px;
+    top: 2px;
+    padding: 6px 15px;
+    border-radius: 3px;
+    line-height: 18px;
+    font-size: 11px;
+}
+.header-widget-area {
+    flex: 1;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.site-heading-sidebar {
+    font-size: 80%;
+}
+.site-heading-sidebar .widget {
+    float: left;
+    margin-right: 15px;
+    margin-bottom: 0;
+}
+.site-heading-sidebar .widget p {
+    margin-bottom: 5px;
+}
+.woo-off.header-widgets-off .header-widget-area {
+    display: none;
+}
+@media (max-width: 767px) {
+  .header-widget-area {
+      order: 3;
+      flex: 100%;
+      justify-content: center;
+      text-align: center;
+  }
+  .site-heading-sidebar .widget {
+      float: none;
+  }
+  .top-bar-section .widget {
+      text-align: center !important;
+  }
+  .menu-search-widget {
+    max-width: 100%;
+    margin-right: 15px;
+  }
+  .site-heading, .header-right {
+    width: 50%;
+  }
+  .site-menu {padding: 0;}
+  .content-article {
+    clear: none;
+    width: 100%;
+    margin-right: 0;
+  }
+  .page-area {
+    padding-right: 0;
+  }
+  .woo-off .site-heading {
+    width: 75%;
+  }
+  .woo-off .header-right {
+    width: 15%;
+    padding-left: 0;
+  }
+  #sidebar {
+    width: 100%;
+    margin-left: 0;
+}
+}
+@media (min-width: 768px) {
+  .site-heading, .header-right {
+    width: 25%;
+  }
+  .woo-off .header-right {
+    display: none;
+  }
+  .woo-off.header-widgets-off .site-heading {
+    width: 100%;
+  }
+  .woo-off.header-widgets-off .site-branding-logo, .woo-off.header-widgets-off .site-branding-text {
+    text-align: center;
+    float: none;
+  }
+}
+.top-bar-section {
+    background-color: #f9f9f9;
+    color: #334142;
+    padding: 5px 0;
+    font-size: 14px;
+    border-bottom: 1px solid #f6f6f6;
+    z-index: 98;
+    position: relative;
+}
+.top-bar-section .widget, .top-bar-section p {
+    margin-bottom: 0;
+}
+.top-bar-section .widget:nth-child(3n-1){
+    text-align: center;
+}
+.top-bar-section .widget:nth-child(3n) {
+    text-align: right;
+}
+/* Menu social links */
+.navbar a[href*="vk.com"], .navbar a[href*="dribbble.com"], .navbar a[href*="facebook.com"], .navbar a[href*="flickr.com"], .navbar a[href*="foursquare.com"], .navbar a[href*="plus.google.com"], .navbar a[href*="instagram.com"], .navbar a[href*="linkedin.com"], .navbar a[href*="pinterest.com"], .navbar a[href*="reddit.com"], .navbar a[href*="tumblr.com"], .navbar a[href*="twitter.com"], .navbar a[href*="vimeo.com"], .navbar a[href*="wordpress.com"], .navbar a[href*="wordpress.org"], .navbar a[href*="youtube.com"], .navbar a[href*="mailto:"], .navbar a[href*="twitch.tv"], .navbar a[href$="/feed/"] {
+    text-indent: -9999px;
+    white-space: normal;
+    min-width: 30px;
+    padding: 4px 8px;
+    border: 1px solid;
+    border-radius: 50%;
+    margin-top: 9px;
+    margin-left: 5px;
+    color: #444;
+}
+.navbar a[href*="vk.com"]:after, .navbar a[href*="dribbble.com"]:after, .navbar a[href*="facebook.com"]:after, .navbar a[href*="flickr.com"]:after, .navbar a[href*="foursquare.com"]:after, .navbar a[href*="plus.google.com"]:after, .navbar a[href*="instagram.com"]:after, .navbar a[href*="linkedin.com"]:after, .navbar a[href*="pinterest.com"]:after, .navbar a[href*="reddit.com"]:after, .navbar a[href*="tumblr.com"]:after, .navbar a[href*="twitter.com"]:after, .navbar a[href*="vimeo.com"]:after, .navbar a[href*="wordpress.com"]:after, .navbar a[href*="wordpress.org"]:after, .navbar a[href*="youtube.com"]:after, .navbar a[href*="mailto:"]:after, .navbar a[href*="twitch.tv"]:after, .navbar a[href$="/feed/"]:after {
+    font-family: "Line Awesome Brands";
+    text-indent: 0;
+    display: block;
+    float: left;
+    position: relative;
+    font-weight: 900;
+    
+}
+.navbar a[href$="/feed/"]:after {
+    font-family: "Line Awesome free";
+    content: "\f09e";
+}
+.navbar a[href*="vk.com"]:after {
+    content: "\f189";
+}
+.navbar a[href*="twitch.tv"]:after {
+    content: "\f1e8";
+}
+.navbar a[href*="mailto:"]:after {
+    font-family: "Line Awesome free";
+    content: "\f658";
+}
+.navbar a[href*="youtube.com"]:after {
+    content: "\f167";
+}
+.navbar a[href*="wordpress.com"]:after, .navbar a[href*="wordpress.org"]:after {
+    content: "\f19a";
+}
+.navbar a[href*="vimeo.com"]:after {
+    content: "\f194";
+}
+.navbar a[href*="tumblr.com"]:after {
+    content: "\f173";
+}
+.navbar a[href*="reddit.com"]:after {
+}
+.navbar a[href*="twitter.com"]:after {
+    content: "\f099";
+}
+.navbar a[href*="dribbble.com"]:after {
+    content: "\f17d";
+}
+.navbar a[href*="facebook.com"]:after {
+    content: "\f09a";
+}
+.navbar a[href*="flickr.com"]:after {
+    content: "\f16e"; 
+}
+.navbar a[href*="foursquare.com"]:after {
+    content: "\f180";
+}
+.navbar a[href*="instagram.com"]:after {
+    content: "\f16d";
+}
+.navbar a[href*="linkedin.com"]:after {
+    content: "\f0e1"; 
+}
+.navbar a[href*="pinterest.com"]:after {
+    content: "\f231";
+}
